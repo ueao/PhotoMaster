@@ -131,7 +131,7 @@ func drawMaskImage(image: UIImage) -> UIImage {
 
 //「合成」ボタンを押した時に呼ばれるメソッド
 //！！１@IBActionとphotoImageViewがエラー！！！
-    @IBAction func processButtonTapped(sender: UIButton) {
+    func processButtonTapped(sender: UIButton) {
     
     guard let selectedPhoto = photoImageView.image else {
         
@@ -173,7 +173,7 @@ func postToSNS(serviceType: String) {
 }
 
 //「アップロード」ボタンを押した時に呼ばれるメソッド
-@IBAction func uploadButtonTapped(sender: UIButton) {
+func uploadButtonTapped(sender: UIButton) {
     
     guard let selectedPhoto = photoImageView.image else {
         simpleAlert("画像がありません")
